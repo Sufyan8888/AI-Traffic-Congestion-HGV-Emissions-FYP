@@ -1,35 +1,48 @@
 # AI Integrated Traffic Congestion and HGV Emission Forecasting
 
 **Final Year Project (COM6001)**  
-**Muhammad Sufyan Zafar** – Student ID: 22504928  
-**Buckinghamshire New University**  
-**Supervisors**: Syeda Faiza Nasim & Sir Sajeed Majeed
+**Muhammad Sufyan Zafar** — Student ID: 22504928  
+**Buckinghamshire New University**
 
 ---
 
 ## Project Overview
 
-This project develops machine learning models to forecast traffic congestion and quantify the disproportionate environmental impact of Heavy Goods Vehicles (HGVs) using the UK Department for Transport’s **Annual Average Daily Flow (AADF)** dataset.
+This project applies machine learning to forecast traffic congestion and quantify the environmental impact of Heavy Goods Vehicles (HGVs) using the UK Department for Transport’s **Annual Average Daily Flow (AADF)** dataset.
 
-**Key Highlights:**
-- Analysed **555,880 records** spanning 23 years (2000–2023) across 11 UK regions.
-- Demonstrated that HGVs represent only **4.11%** of total traffic but contribute **28.1%** of estimated road CO₂ emissions (7× disproportionate impact).
-- Trained Random Forest and XGBoost models with proper feature engineering and data leakage prevention.
-- Developed and deployed an **interactive web dashboard** for traffic prediction and emission analysis.
+- **Dataset**: 555,880 records (2000–2023) across 11 UK regions
+- **Key Insight**: HGVs represent **4.11%** of traffic but contribute **28.1%** of road CO₂ emissions (7× disproportionate impact)
+- **Best Model**: XGBoost (R² = 0.5815)
 
 ---
 
-## Live Dashboard
+## 🎯 Live Interactive Dashboard
 
-**[🔗 Access the Interactive Dashboard](https://fyp-sufyan-zafar-traffic.netlify.app)**
+**[🔗 Open Dashboard](https://fyp-sufyan-zafar-traffic.netlify.app)**
 
-Features include:
-- Traffic Volume Predictor
-- Regional Comparison Charts
-- HGV Emission Impact Visualizer
-- Spatial HGV Intensity Map (Kepler.gl)
-- Research Assistant Chatbot
+Features: Traffic Predictor • Regional Analysis • HGV Emission Calculator • Spatial Map • Chatbot
 
 ---
 
 ## Repository Structure
+
+- `notebooks/` — Exploratory Data Analysis & Model Training
+- `src/` — Python scripts for preprocessing and modelling
+- `outputs/` — Charts and results
+- `dashboard/` — Web dashboard code
+
+---
+
+## Technologies
+
+**Python** • Pandas • Scikit-learn • XGBoost • Matplotlib • Seaborn • Plotly • Kepler.gl • Netlify
+
+---
+
+## Reproduce Locally
+
+```bash
+git clone https://github.com/Sufyan8888/AI-Traffic-Congestion-HGV-Emissions-FYP.git
+cd AI-Traffic-Congestion-HGV-Emissions-FYP
+pip install -r requirements.txt
+jupyter notebook
